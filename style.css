@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(bgg.jpg);
+    background-size: cover;
+    /* background-position: center;  */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav{
+    background-color: rgba(9, 10, 10, 0.452);
+    text-align: center;
+}
+
+.nav ul{
+    display: inline-flex;
+    list-style: none;
+    color: white;
+}
+
+.nav ul li{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav ul li a:hover{
+    background-color: rgb(187, 187, 223);
+    border-radius: 8px;
+}
+
+.nav .fa{
+    margin-right: 8px;
+}
+
+.sub-class{
+    display: none;
+}
+
+.nav ul li:hover .sub-class{
+    display: block;
+    position: absolute;
+    background-color:rgba(9, 10, 10, 0.452) ;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.nav ul li:hover .sub-class ul{
+    display: block;
+    margin: 10px;
+
+}
+
+.nav ul li:hover .sub-class ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+
+.nav ul li:hover .sub-class ul li:last-child{
+    border-bottom: none;
+}
+
+.nav ul li:hover .sub-class ul li a:hover{
+    color: rgb(217, 217, 235);
+}
+
+.fa-angle-right{
+    float: right;
+}
+.stc{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 98px;
+    color: white;
+    padding: 10px;
+}
+
+.box{
+    width: 70%;
+    margin: -75px 268px;
+    padding: -3px 31px;
+    padding: 3px;
+    font-size: 18px;
+    color: white;
+} 
